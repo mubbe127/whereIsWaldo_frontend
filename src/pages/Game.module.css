@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+
+}
+
+.gameContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+.imageContainer {
+
+
+ position: relative;
+ width: 100%;
+ margin: 0; 
+ padding: 0;
+
+}
+
+.gameImage {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  padding: 0;
+  margin:0;
+ 
+}
+
+.charContainer {
+    position: absolute;
+
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 40px 30px;
+  opacity: 0.4;
+  pointer-events: none; /* Allow clicks to pass through */
+
+}
+
+.foundCharacters {
+
+    border: 1px solid red;
+}
