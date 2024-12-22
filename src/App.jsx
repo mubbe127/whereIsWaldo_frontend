@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Game from './pages/Game';
+import Home from './pages/Home';
 
 import './App.css'
 
@@ -11,17 +13,23 @@ function App() {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    children: [
-    ]
+    element: <Home />,
+ 
   },
+  {
+    path:"/home",
+    element: <Home/>
+  },
+
+  { path:"/game/:id",
+    element : <Game/>
+  },
+  
 ]);
   
   return (
     <>
-
-    <Game/>
-    
+    <RouterProvider router={router}/>
     </>
   )
 }
