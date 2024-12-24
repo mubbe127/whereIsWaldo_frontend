@@ -2,6 +2,10 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 function Home() {
+
+
+
+  
   return (
     <div className={styles.pageContainer}>
       <div className={styles.header}></div>
@@ -14,9 +18,31 @@ function Home() {
             <h3>Universe 11</h3>
             <img src="./src/assets/images/game/robotCity.webp" alt="" />
             <div className={styles.charactersContainer}>
-              <h5> Random characters!</h5>
+              <div>
+                <img
+                  src="/assets/images/characters/universe11/0.png"
+                  alt=""
+                />
+                <h5>Gandald</h5>
+              </div>
+              <div>
+                <img
+                  src="/assets/images/characters/universe11/1.png"
+                  alt=""
+                />
+                <h5>Luffy</h5>
+              </div>
+              <div>
+                <img
+                  src="/assets/images/characters/universe11/2.png"
+                  alt=""
+                />
+                <h5>Harry Potter</h5>
+              </div>
             </div>
+            
           </div>
+          
         </Link>
         <Link to="/game/2">
           <div className={`${styles.gameContainer} ${styles.cyberpunkCity}`}>
@@ -25,21 +51,21 @@ function Home() {
             <div className={styles.charactersContainer}>
               <div>
                 <img
-                  src="/assets/images/characters/cyberpunkCity/1.webp"
+                  src="/assets/images/characters/cyberpunkCity/0.png"
                   alt=""
                 />
-                <h5>Patrick</h5>
+                <h5>Patric</h5>
               </div>
               <div>
                 <img
-                  src="/assets/images/characters/cyberpunkCity/3.webp"
+                  src="/assets/images/characters/cyberpunkCity/1.png"
                   alt=""
                 />
-                <h5>Spider-Man</h5>
+                <h5>Super Mario</h5>
               </div>
               <div>
                 <img
-                  src="/assets/images/characters/cyberpunkCity/2.webp"
+                  src="/assets/images/characters/cyberpunkCity/2.png"
                   alt=""
                 />
                 <h5>Phineas</h5>

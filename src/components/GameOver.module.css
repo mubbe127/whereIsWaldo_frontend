@@ -1,0 +1,114 @@
+
+.gameOverBackground {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gameOverContainer {
+    position: fixed;
+    padding: 40px 30px;
+    border-radius: 10px;
+    margin-top: 25vh;
+    background-color: rgba(255, 255, 255, 0.776);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gameOverHeading {
+    text-align: center;
+  }
+  
+  .userscoreContainer {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .userscoreContainer p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .userscoreContainer p:first-child {
+    font-size: 1.6rem;
+    font-size: bold;
+  }
+  
+  .highscoreContainer .highscoreHeading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  .scoreContainerHeading {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-left: 30px;
+  }
+  .scoreContainerHeading > div {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .scoreContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 0 20px;
+    margin-left: 30px;
+  }
+  .scoreContainer > div {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .scoreContainer .rank,
+  .scoreContainerHeading .rank {
+    width: 15%;
+  }
+  
+  .scoreContainer .username,
+  .scoreContainerHeading .username {
+    margin-left: 7%;
+    width: 40%;
+  }
+  .scoreContainer .usernameInput {
+    margin-left: 7%;
+    width: 40%;
+    padding-top: 7px;
+    box-sizing: border-box;
+  }
+  
+  .scoreContainer .usernameInput form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scoreContainer .usernameInput input {
+    width: 100%;
+    height: 1.8rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+  }
+  
+  .newGameButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 255, 0.79);
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+  }
+  
