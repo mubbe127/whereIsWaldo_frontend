@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
+
+
+/// ADD A LEADERBORAD COMPONENT
 function Home() {
 
 
