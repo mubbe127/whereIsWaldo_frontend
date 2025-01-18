@@ -1,6 +1,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import styles from "./GameOver.module.css"
+import domainUrl from "../../domain";
 
 function GameOver({userscore, setUserscore, highscore, restartGame}){
 
@@ -9,7 +10,7 @@ function GameOver({userscore, setUserscore, highscore, restartGame}){
     function submitUsername(e) {
         e.preventDefault();
         console.log("submit username");
-        fetch(`http://localhost:4100/api/score`, {
+        fetch(`${domainUrl}/api/score`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

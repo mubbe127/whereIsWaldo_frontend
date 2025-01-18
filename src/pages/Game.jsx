@@ -6,6 +6,8 @@ import { useGameTimer } from "./utils/useGameTimer.js";
 import GameOver from "../components/GameOver.jsx";
 import GameCharacters from "../components/GameCharacters.jsx";
 import SelectGameCharacters from "../components/SelectGameCharacters.jsx";
+import domainUrl from "../../domain.js";
+
 
 function Game() {
   const [gameCharacters, setGameCharacters] = useState([]);
@@ -45,7 +47,7 @@ function Game() {
   }
   //
   async function fetchGame() {
-    fetch(`http://localhost:4100/api/game/${gameId}`, {
+    fetch(`${domainUrl}/api/game/${gameId}`, {
       method: "GET",
       credentials: "include",
     })
@@ -86,7 +88,7 @@ function Game() {
   function handleCharacterSelect(e) {
     console.log("Selected");
     const characterId = e.currentTarget.dataset.id;
-    fetch(`http://localhost:4100/api/game/${gameId}`, {
+    fetch(`${domainUrl}/api/game/${gameId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
