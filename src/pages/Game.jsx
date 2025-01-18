@@ -137,7 +137,7 @@ function Game() {
 
   function restartGame() {
     console.log(gameId);
-    fetch(`http://localhost:4100/api/restartGame/${gameId}`, {
+    fetch(`${domainUrl}/api/restartGame/${gameId}`, {
       method: "GET",
       credentials: "include",
     })

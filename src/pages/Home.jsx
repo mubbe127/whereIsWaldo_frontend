@@ -19,7 +19,7 @@ function Home() {
         <Link to="/game/1">
           <div className={`${styles.gameContainer} ${styles.universe11}`}>
             <h3>Universe 11</h3>
-            <img src="./src/assets/images/game/robotCity.webp" alt="" />
+            <img src="/assets/images/game/robotCity.webp" alt="" />
             <div className={styles.charactersContainer}>
               <div>
                 <img
@@ -50,7 +50,7 @@ function Home() {
         <Link to="/game/2">
           <div className={`${styles.gameContainer} ${styles.cyberpunkCity}`}>
             <h3>Cyberpunk City</h3>
-            <img src="./src/assets/images/game/cyberpunkCity.webp" alt="" />
+            <img src="/assets/images/game/cyberpunkCity.webp" alt="" />
             <div className={styles.charactersContainer}>
               <div>
                 <img
@@ -78,7 +78,7 @@ function Home() {
         </Link>
         <div className={`${styles.gameContainer} ${styles.deadZone}`}>
           <h3>Dead zone</h3>
-          <img src="./src/assets/images/game/deadZone.jpg" alt="" />
+          <img src="/assets/images/game/deadZone.jpg" alt="" />
           <div className={styles.charactersContainer}></div>
         </div>
       </div>
