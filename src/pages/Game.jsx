@@ -28,7 +28,7 @@ function Game() {
   function loadGame(response) {
     setGameCharacters(response.gameCharacters);
     setFoundCharacters(response.foundCharacters);
-    console.log(response);
+    console.log("hej svejs",  response);
     if ((response.newGame || response.existingGame) && !response.gameOver) {
       // Clear any previous interval to avoid multiple timers
       resetTimer();
